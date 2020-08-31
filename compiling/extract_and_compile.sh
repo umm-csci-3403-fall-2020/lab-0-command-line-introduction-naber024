@@ -7,7 +7,7 @@ tar -zxf NthPrime.tgz
 cd NthPrime || exit
 
 #Compile the C program.
-gcc main.c nth_prime.c nth_prime.h -o NthPrime
+gcc ./*.c -o NthPrime
 
 #Call the resulting executable.
 ./NthPrime "$1"
